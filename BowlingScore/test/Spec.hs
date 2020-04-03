@@ -1,6 +1,7 @@
 import Test.QuickCheck
 import Control.Monad
 import System.Exit
+import Bowling
 
 check s prop = do
     putStr ("\n" ++ s ++ ": ")
@@ -8,6 +9,6 @@ check s prop = do
     unless (isSuccess result) exitFailure
 
 main :: IO ()
-main = check "dummy" prop_dummy
+main = check "all bowling games have their score <= 300" prop_max_score
 
-prop_dummy b = b == not (not b)
+prop_max_score ts = score ts <= 300

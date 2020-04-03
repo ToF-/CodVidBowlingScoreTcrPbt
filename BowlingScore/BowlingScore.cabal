@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d8347ec13302c06189d895d30b2ddaaca81ab7afffbe043398d647344c39b8e6
+-- hash: e47afb9f1e913b74986d08d5637b34b7ea3c630c3b00e722181e0a8910307f55
 
 name:           BowlingScore
 version:        0.1.0.0
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      Bowling
       Lib
   other-modules:
       Paths_BowlingScore
