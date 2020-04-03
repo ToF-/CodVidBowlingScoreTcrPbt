@@ -4,5 +4,9 @@ where
 type Throw = Int
 type Score = Int
 
+
+
 score :: [Throw] -> Score
-score = const 0
+score throws = min 300 (sum throws)
+
+
