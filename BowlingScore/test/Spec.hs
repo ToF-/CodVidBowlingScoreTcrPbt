@@ -13,7 +13,6 @@ instance Arbitrary Frame
         throw2 <- choose (0, 9-throw1)
         return (Average throw1 throw2)
 
-
 toThrows :: Frame -> [Throw]
 toThrows (Average throw1 throw2) = [throw1, throw2]
 
